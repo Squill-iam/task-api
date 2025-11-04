@@ -109,19 +109,17 @@ components:
           type: string
           example: Validation failed
         details:
-          type: array
-          items:
-            type: string
+          type: string
+          example: ID must be a positive integer
     NotFoundError:
       type: object
       properties:
         error:
           type: string
-          example: Task not found
+          example: Task Not found
         details:
-          type: array
-          items:
-            type: string
+          type: string
+          example: No task exists with the given ID
   responses:
     BadRequest:
       description: Invalid input
